@@ -1,7 +1,7 @@
 // LLM-powered generator using Cloudflare Workers AI
 // Replace WORKER_URL with your deployed Cloudflare Worker URL
 
-const WORKER_URL = "https://still-sound-96b9.prajapatpraveen144.workers.dev/"; // ← REPLACE THIS
+const WORKER_URL = "https://research-ai.praveen-prajapat.workers.dev"; // ← REPLACE THIS
 
 export async function generateResearchQuestion({ fieldId, interest, horizonYear, ambitionBoost = 0 }) {
   const res = await fetch(WORKER_URL, {
