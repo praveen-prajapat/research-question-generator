@@ -68,13 +68,14 @@ export default function Landing({ onStart }) {
       </motion.p>
 
       <motion.div
-        initial={{ opacity: 0, y: 10 }}
+        initial={{ opacity: 0, y: -8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.15, duration: 0.6 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
+        className="fixed right-4 top-4 z-30 sm:right-6 sm:top-6"
       >
         <Link
           to="/team"
-          className="glass-pill group mt-8 inline-flex items-center gap-2 rounded-full px-5 py-2.5 font-mono text-xs uppercase tracking-widest text-ink-muted transition-colors hover:text-ink"
+          className="glass-pill group inline-flex items-center gap-2 rounded-full px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-ink-muted transition-colors hover:text-ink sm:px-5 sm:py-2.5 sm:text-xs"
         >
           <Users size={14} className="text-signal/80" />
           Meet the Team
