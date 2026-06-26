@@ -9,6 +9,7 @@ import HorizonStep from "./HorizonStep";
 import GeneratingScreen from "./GeneratingScreen";
 import ResultPage from "./ResultPage";
 import { generateResearchQuestion } from "../lib/generator";
+import { getField } from "../data/fields";
 
 const STAGES = {
   LANDING: "landing",
@@ -99,6 +100,7 @@ export default function WizardApp() {
           <InterestStep
             key="interest"
             value={interest}
+            field={fieldId ? getField(fieldId) : null}
             onChange={setInterest}
             onNext={() => setStage(STAGES.HORIZON)}
             onBack={() => goBack(STAGES.FIELD)}

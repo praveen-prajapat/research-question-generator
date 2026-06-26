@@ -32,7 +32,7 @@ export default function Landing({ onStart }) {
         Research Question
         <br />
         <span className="bg-gradient-to-r from-signal via-signal-bright to-bio bg-clip-text text-transparent">
-          Generator 2040
+          Generator
         </span>
       </motion.h1>
 

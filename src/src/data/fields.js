@@ -30,6 +30,16 @@ export const FIELDS = [
       "brittleness of rule-based legacy systems",
     ],
     partners: ["biology", "psychology", "physics", "economics", "education"],
+    suggestions: [
+      "Computer Architecture",
+      "Distributed Systems",
+      "Cybersecurity",
+      "Cloud Computing",
+      "Operating Systems",
+      "Database Systems",
+      "Compilers",
+      "Human-Computer Interaction",
+    ],
   },
   {
     id: "ai",
@@ -57,6 +67,16 @@ export const FIELDS = [
       "unsustainable compute costs of frontier training runs",
     ],
     partners: ["biology", "psychology", "economics", "medicine", "education"],
+    suggestions: [
+      "Large Language Models",
+      "Reinforcement Learning",
+      "AI Alignment",
+      "Computer Vision",
+      "Generative Models",
+      "Multi-Agent Systems",
+      "AI Safety",
+      "Foundation Models",
+    ],
   },
   {
     id: "ee",
@@ -81,6 +101,16 @@ export const FIELDS = [
       "interference in dense IoT deployments",
     ],
     partners: ["physics", "biology", "mechanical engineering", "economics"],
+    suggestions: [
+      "Power Electronics",
+      "Wireless Communications",
+      "Semiconductor Devices",
+      "Renewable Energy Systems",
+      "Photonics",
+      "Embedded Systems",
+      "Battery Technology",
+      "RF Engineering",
+    ],
   },
   {
     id: "me",
@@ -105,6 +135,16 @@ export const FIELDS = [
       "vibration-induced fatigue in aerospace structures",
     ],
     partners: ["biology", "computer science", "physics", "medicine"],
+    suggestions: [
+      "Robotics",
+      "Biomechanics",
+      "Additive Manufacturing",
+      "Soft Robotics",
+      "Aerospace Structures",
+      "Vibration & Dynamics",
+      "Thermal Systems",
+      "Mechatronics",
+    ],
   },
   {
     id: "physics",
@@ -129,6 +169,16 @@ export const FIELDS = [
       "calibration drift in large detector arrays",
     ],
     partners: ["computer science", "chemistry", "mechanical engineering", "mathematics"],
+    suggestions: [
+      "Quantum Computing",
+      "Condensed Matter Physics",
+      "Astrophysics",
+      "Particle Physics",
+      "Photonics",
+      "Plasma Physics",
+      "Quantum Sensing",
+      "Gravitational Waves",
+    ],
   },
   {
     id: "chemistry",
@@ -153,6 +203,16 @@ export const FIELDS = [
       "scalability gaps between lab-scale and industrial synthesis",
     ],
     partners: ["biology", "medicine", "physics", "mechanical engineering"],
+    suggestions: [
+      "Catalysis",
+      "Materials Science",
+      "Green Chemistry",
+      "Polymer Science",
+      "Electrochemistry",
+      "Drug Discovery",
+      "Nanomaterials",
+      "Energy Storage",
+    ],
   },
   {
     id: "biology",
@@ -177,6 +237,16 @@ export const FIELDS = [
       "incomplete maps of gene regulatory networks",
     ],
     partners: ["computer science", "ai", "chemistry", "medicine", "mechanical engineering"],
+    suggestions: [
+      "Synthetic Biology",
+      "Genomics",
+      "Neuroscience",
+      "Gene Editing",
+      "Microbiome Research",
+      "Developmental Biology",
+      "Evolutionary Biology",
+      "Cell Biology",
+    ],
   },
   {
     id: "medicine",
@@ -201,6 +271,16 @@ export const FIELDS = [
       "overdiagnosis from incidental imaging findings",
     ],
     partners: ["ai", "biology", "psychology", "economics", "computer science"],
+    suggestions: [
+      "Drug Discovery",
+      "Medical Imaging",
+      "Personalized Medicine",
+      "Surgical Robotics",
+      "Public Health",
+      "Clinical Diagnostics",
+      "Regenerative Medicine",
+      "Telemedicine",
+    ],
   },
   {
     id: "economics",
@@ -224,6 +304,16 @@ export const FIELDS = [
       "short-termism in corporate investment decisions",
     ],
     partners: ["ai", "computer science", "psychology", "education"],
+    suggestions: [
+      "Behavioral Economics",
+      "Labor Markets",
+      "Macroeconomic Policy",
+      "Development Economics",
+      "Market Design",
+      "Inequality & Growth",
+      "Climate Economics",
+      "Causal Inference",
+    ],
   },
   {
     id: "finance",
@@ -245,6 +335,16 @@ export const FIELDS = [
       "contagion across interconnected financial institutions",
     ],
     partners: ["ai", "economics", "computer science", "psychology"],
+    suggestions: [
+      "Financial Markets",
+      "Risk Management",
+      "Fintech",
+      "Asset Pricing",
+      "Cryptocurrency & DeFi",
+      "Corporate Finance",
+      "Fraud Detection",
+      "Quantitative Trading",
+    ],
   },
   {
     id: "math",
@@ -266,6 +366,16 @@ export const FIELDS = [
       "scalability limits of exact inference methods",
     ],
     partners: ["physics", "computer science", "ai", "economics"],
+    suggestions: [
+      "Topology",
+      "Optimization Theory",
+      "Probability & Statistics",
+      "Graph Theory",
+      "Numerical Analysis",
+      "Algebraic Geometry",
+      "Dynamical Systems",
+      "Mathematical Logic",
+    ],
   },
   {
     id: "psychology",
@@ -287,6 +397,16 @@ export const FIELDS = [
       "limited generalizability of lab-based cognitive findings",
     ],
     partners: ["ai", "medicine", "education", "economics", "computer science"],
+    suggestions: [
+      "Cognitive Psychology",
+      "Mental Health",
+      "Behavioral Science",
+      "Decision Making",
+      "Social Psychology",
+      "Digital Therapeutics",
+      "Habit Formation",
+      "Developmental Psychology",
+    ],
   },
   {
     id: "education",
@@ -308,6 +428,16 @@ export const FIELDS = [
       "stagnant engagement in large online courses",
     ],
     partners: ["ai", "psychology", "computer science", "economics"],
+    suggestions: [
+      "AI Tutoring Systems",
+      "Learning Analytics",
+      "Curriculum Design",
+      "Online Learning",
+      "Educational Equity",
+      "Skill Assessment",
+      "STEM Education",
+      "Teacher Training",
+    ],
   },
   {
     id: "other",
@@ -327,13 +457,23 @@ export const FIELDS = [
       "underrepresentation of edge-case users in design",
     ],
     partners: ["computer science", "ai", "biology", "economics", "psychology"],
+    suggestions: [
+      "Citizen Science",
+      "Open Hardware",
+      "Sustainability",
+      "Design Innovation",
+      "Cross-Disciplinary Methods",
+      "Emerging Technologies",
+      "Systems Thinking",
+      "Science Communication",
+    ],
   },
 ];
 
 // Future domains: where the research question is "aimed". Horizon-dependent
 // sets give later horizons a more speculative, civilization-scale framing.
 export const FUTURE_DOMAINS = {
-  2026: [
+  "1 Year": [
     "next-generation data centers",
     "current clinical trial pipelines",
     "today's electric vehicle fleets",
@@ -343,7 +483,17 @@ export const FUTURE_DOMAINS = {
     "today's financial markets",
     "modern manufacturing lines",
   ],
-  2035: [
+  "2 Year": [
+    "early-stage autonomous transport pilots",
+    "emerging personalized medicine platforms",
+    "next-generation industrial supply chains",
+    "early brain-computer interface prototypes",
+    "expanding renewable power grids",
+    "AI-augmented research labs",
+    "climate-adaptive coastal infrastructure",
+    "growing open research collectives",
+  ],
+  "3 Year": [
     "autonomous urban transport networks",
     "personalized medicine at population scale",
     "carbon-neutral industrial supply chains",
@@ -353,7 +503,7 @@ export const FUTURE_DOMAINS = {
     "climate-resilient coastal cities",
     "decentralized global research collectives",
   ],
-  2045: [
+  "4 Year": [
     "off-world research settlements",
     "post-scarcity manufacturing networks",
     "synthetic biospheres for ecosystem restoration",
@@ -367,21 +517,27 @@ export const FUTURE_DOMAINS = {
 
 export const HORIZONS = [
   {
-    year: 2026,
-    label: "2026 Researcher",
+    year: "1 Year",
+    label: "1 Year Researcher",
     tagline: "Grounded in what's buildable now",
-    creativity: 0.25,
+    creativity: 0.2,
   },
   {
-    year: 2035,
-    label: "2035 Researcher",
-    tagline: "A decade out — bold but plausible",
-    creativity: 0.6,
+    year: "2 Year",
+    label: "2 Year Researcher",
+    tagline: "Near-term — bold but plausible",
+    creativity: 0.45,
   },
   {
-    year: 2045,
-    label: "2045 Researcher",
-    tagline: "Civilization-scale, frontier speculation",
+    year: "3 Year",
+    label: "3 Year Researcher",
+    tagline: "Mid-term horizon, room to stretch",
+    creativity: 0.7,
+  },
+  {
+    year: "4 Year",
+    label: "4 Year Researcher",
+    tagline: "Full PhD horizon, frontier ambition",
     creativity: 1,
   },
 ];

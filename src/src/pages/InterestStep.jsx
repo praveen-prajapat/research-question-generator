@@ -4,15 +4,19 @@ import { ArrowRight, Search } from "lucide-react";
 import { INTEREST_SUGGESTIONS } from "../data/fields";
 import StepShell from "../components/StepShell";
 
-export default function InterestStep({ value, onChange, onNext, onBack }) {
+export default function InterestStep({ value, field, onChange, onNext, onBack }) {
   const [query, setQuery] = useState(value || "");
 
+  const suggestionPool = field?.suggestions?.length
+    ? field.suggestions
+    : INTEREST_SUGGESTIONS;
+
   const filtered = useMemo(() => {
-    if (!query.trim()) return INTEREST_SUGGESTIONS.slice(0, 8);
-    return INTEREST_SUGGESTIONS.filter((s) =>
+    if (!query.trim()) return suggestionPool.slice(0, 8);
+    return suggestionPool.filter((s) =>
       s.toLowerCase().includes(query.toLowerCase())
     ).slice(0, 8);
-  }, [query]);
+  }, [query, suggestionPool]);
 
   const selectChip = (s) => {
     setQuery(s);
