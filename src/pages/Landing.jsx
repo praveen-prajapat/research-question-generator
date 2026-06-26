@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 import SynthesisCore from "../components/SynthesisCore";
 
 export default function Landing({ onStart }) {
@@ -65,6 +66,20 @@ export default function Landing({ onStart }) {
       >
         Takes about 30 seconds
       </motion.p>
+
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.15, duration: 0.6 }}
+      >
+        <Link
+          to="/team"
+          className="glass-pill group mt-8 inline-flex items-center gap-2 rounded-full px-5 py-2.5 font-mono text-xs uppercase tracking-widest text-ink-muted transition-colors hover:text-ink"
+        >
+          <Users size={14} className="text-signal/80" />
+          Meet the Team
+        </Link>
+      </motion.div>
     </div>
   );
 }
